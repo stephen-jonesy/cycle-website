@@ -336,7 +336,7 @@ a {
 .about-banner {
     width: 101%;
     height: 350px;
-    background-image: url('../pictures/bike.png');
+    background-image: url('bike.png');
     background-size: cover;
     background-position: center;
     filter: brightness(80%);
