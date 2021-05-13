@@ -111,7 +111,7 @@ a {
 
 
 .hero {
-    background-image: url('../pictures/landing-page2.png');
+    background-image: url('landing-page2.png');
     height: 100vh;
     min-height: 600px;
     width: 100%;
