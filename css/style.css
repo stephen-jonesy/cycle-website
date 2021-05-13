@@ -115,7 +115,7 @@ a {
 
 
 .hero {
-    background-image: url('landing-page2.png');
+    background-image: url('../pictures/landing-page2.png');
     height: 100vh;
     min-height: 600px;
     width: 100%;
@@ -177,7 +177,7 @@ a {
     right: 50%;
     font-size: 60px;
     cursor: pointer;
-    color: white;
+    color: rgb(223, 217, 217);
     margin: 0;
 
 }
@@ -340,7 +340,7 @@ a {
 .about-banner {
     width: 101%;
     height: 350px;
-    background-image: url('bike.png');
+    background-image: url('../pictures/bike.png');
     background-size: cover;
     background-position: center;
     filter: brightness(80%);

@@ -33,9 +33,16 @@ const activeLink = (e) => {
 
 const navScroll = (e) => {
   e.preventDefault();
+  let id;
 
-  const id = e.target.getAttribute("href").slice(1);
-  console.log(id);
+  if (e.target.matches('.fa-chevron-down')) {
+    id = e.target.parentElement.getAttribute("href").slice(1)
+
+	}
+  else {
+    id = e.target.getAttribute("href").slice(1);
+
+  }
   const element = document.getElementById(id);    
   let position = element.offsetTop;
   const navHeight = '60';
@@ -86,17 +93,18 @@ const articleCarousell = () => {
   });
 }
 
-window.addEventListener("DOMContentLoaded", function () {
-  console.log('loaded')
-
-})
-
 window.addEventListener("scroll", function () {
   onScroll()
 
 })
 
 document.addEventListener('click', function (e) {
+
+
+	if (e.target.matches('.fa-chevron-down')) {
+    navScroll(e)
+
+	}
 
 	if (e.target.matches('.scroll-link')) {
     activeLink(e)
