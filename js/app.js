@@ -1,3 +1,4 @@
+
 const onScroll = () => {
   const header = document.querySelector(".header");
   const tileImg = document.querySelectorAll('.tile-img');
@@ -93,6 +94,12 @@ const articleCarousell = () => {
   });
 }
 
+const onLoad = () => {
+  const loaderPage = document.querySelector('.loader-page')
+  loaderPage.classList.remove('loader-page-active')
+  
+}
+
 window.addEventListener("scroll", function () {
   onScroll()
 
@@ -114,5 +121,8 @@ document.addEventListener('click', function (e) {
 
 },);
 
+window.addEventListener('load', () => {
+  onLoad()
+});
+
 articleCarousell()
- 
