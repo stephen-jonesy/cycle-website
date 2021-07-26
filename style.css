@@ -11,7 +11,7 @@
     color: #eee8e8;
 }
 
-.lego-text {
+.logo-text {
     font-family: 'Lexend Mega', sans-serif;
     cursor: pointer;
 
@@ -127,12 +127,12 @@ a {
 
 }
 
-.lego-container {
+.logo-container {
     display: flex;
     align-items: flex-end;
 }
 
-.lego-text {
+.logo-text {
     font-family: 'Lexend Mega', sans-serif;
     cursor: pointer;
 
