@@ -102,6 +102,8 @@ document.addEventListener("click", function (e) {
 
 window.addEventListener("load", () => {
   onLoad();
+  const copyrightText = document.querySelector(".copyright");
+  copyrightText.innerHTML = `© Cycle ${new Date().getFullYear()}. ALL RIGHTS RESERVED.`;
 });
 
 articleCarousell();
